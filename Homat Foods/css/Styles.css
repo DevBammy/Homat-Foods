@@ -1,0 +1,338 @@
+header{
+  position: relative;
+  background-color: #333;
+  height: 15vh;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  color: #fff;
+}
+
+header .container{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+header .container img{
+  width: 80px;
+  border-radius: 50%;
+  align-self: center;
+}
+
+header .container a{
+  margin-right: 20px;
+}
+
+/* Section-A */
+.section-a{
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/Food.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.section-a::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.section-a .a-inner{
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+  background-color: #E8E2BB;
+  z-index: 1;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+}
+
+.section-a .a-inner h1{
+  text-transform: uppercase;
+  font-size: 62px;
+  margin-top: 30px;
+  font-weight: bolder;
+  
+}
+.section-a .a-inner p{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.section-a .a-inner a{
+  color: #333;
+  border: 2px solid #333;
+  font-weight: 400;
+}
+.section-a .a-inner a:hover{
+  color: #fff;
+  border: 2px solid #333;
+  background: #333;
+}
+
+/* Section-B */
+.section-b{
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #E8E2BB;
+  color: #333;
+}
+
+.section-b .b-inner{
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+.section-b .row{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.section-b .row .col{
+  margin-right: 40px;
+  position: relative;
+}
+.section-b .b-inner h1{
+  font-size: 52px;
+  font-weight: 500;
+  position: relative;
+}
+
+.section-b .b-inner p{
+  font-size: 20px;
+  margin-bottom: 20px !important;
+}
+.section-b .b-inner h3{
+  font-size: 20px;
+  margin-bottom: 20px !important;
+  color: #555;
+  font-weight: 600;
+  position: relative;
+}
+.section-b .b-inner .fa-seedling, .fa-tractor, .fa-box, .fa-shipping-fast{
+  font-size: 70px;
+  border: 2px solid #333;
+  padding: 20px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+/* Section-C */
+.section-c{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 400px;
+  background: #fff;
+}
+.section-c div:first-child{
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+.section-c div:last-child{
+  background-image: url(/images/processed-food.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-c h1{
+  font-size: 60px;
+}
+.section-c p{
+  font-size: 30px;
+}
+
+.section-c a{
+  color: #333;
+  border: 2px solid #333;
+  font-weight: 400;
+}
+.section-c a:hover{
+  color: #fff;
+  border: 2px solid #333;
+  background: #333;
+}
+
+/* Section-D */
+.section-d{
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #E8E2BB;
+  color: #333;
+}
+
+.section-d .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-d .row .col{
+  flex-basis: 25%;
+  margin-right: 10px;
+  flex-wrap: wrap;
+}
+
+.section-d h1{
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+.section-d p{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.section-d figcaption h3{
+  font-size: 18px;
+}
+
+.section-d figcaption p{
+  font-size: 12px;
+}
+
+/* Section-E */
+.section-e{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+}
+
+.section-e h1{
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+.section-e p{
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.section-e form{
+  position: relative;
+  background: #333;
+  height: 60px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.section-e form input{
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+  height: 100%;
+}
+
+.section-e button{
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 100px;
+   height: 100%;
+   border-radius: 0 20px 20px 0;
+   outline: none;
+   border: none;
+   cursor: pointer;
+}
+
+/* Section-F */
+.section-f{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+  text-align: center;
+}
+
+.section-f h1{
+  font-size: 62px;
+  margin-bottom: 10px;
+}
+.section-f p{
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.section-f .row{
+  display: flex;
+  justify-content: center;
+}
+.section-f .col{
+  margin: 0 20px;
+}
+.section-f .col p{
+  font-size: 16px;
+}
+/* Footer */
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background: #333;
+  color: #fff;
+}
+
+
+footer .row{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+footer .col p{
+  color: #999;
+  font-size: 18px;
+}
+
+footer  .fa-facebook, .fa-instagram, .fa-twitter, .fa-linkedin{
+  color: #999;
+  margin-right: 10px;
+  font-size: 20px ;
+  transition: all .3s ease-in-out;
+}
+footer  .fa-facebook:hover, .fa-instagram:hover, .fa-twitter:hover, .fa-linkedin:hover{
+  transform: scale(1.2);
+  color: #fff;
+}
